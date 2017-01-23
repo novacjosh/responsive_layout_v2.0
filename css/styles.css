@@ -1,0 +1,298 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	color: black;
+	text-align: center;
+	background-color:	slategrey;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+
+	color: #404040;
+	font-weight: 700;
+}
+
+h2 {
+	padding-bottom: 20px;
+	font-weight: 400;
+	color: black;
+}
+
+h3 {
+	font-weight: 400;
+}
+
+p {
+	color: black;
+	font-weight: 400;
+}
+
+.clearfix::after {
+    content: "";
+	display: table;
+    clear: both;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.nav {
+    text-align: center;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+.main-header {
+	width: 100%;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+}
+
+.main-nav {
+	list-style: none;
+	padding: 0;
+}
+
+.main-nav li a {
+	line-height: 1.5em;
+}
+
+.contact-item a {
+	font-weight: 700;
+}
+.footer {
+	margin-top: 8px;
+
+}
+.footer .main-nav {
+	display: none;
+}
+
+.footer .student-name {
+	font-size: .75em;
+	text-align: left;
+	float: left;
+	margin-left: 1em;
+	padding-bottom: 10px;
+}
+#top {
+	text-align: right;
+	font-size: .75em;
+	float: right;
+	margin-right: 1em;
+}
+
+/* ---- Link Styles ---- */
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+a:visited {
+	color: #dfe3ee;
+}
+a:hover {
+	color: black;
+  opacity: .4;
+}
+
+/* ---- Layout Containers ---- */
+
+.page-section {
+	background-color: #b7bfc7;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#home {
+	background-color: #8c99a6;
+
+}
+
+#contact {
+	display: block;
+	padding: 20px;
+	background-color:	#8c99a6;
+}
+
+#skills {
+	background-color: #8c99a6;
+	line-height: 1.5em;
+}
+.skill-list {
+	list-style: none;
+	padding: 0px;
+}
+.footer-border {
+	border-top: .25px solid black;
+	width: 90%;
+	margin: auto;
+	padding-bottom: 10px;
+
+}
+.profile-pic {
+	width: 70%;
+	margin: 0 auto;
+  border-radius: 100%;
+}
+
+.profile-info {
+	width: 90%;
+	text-align: center;
+	margin: 10px auto 20px auto;
+
+}
+.page-section {
+	width: 100%;
+}
+
+.portfolio-item {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.portfolio-item img {
+	width: 100%;
+}
+
+/* ---- Page Elements ---- */
+
+.portfolio-item img {
+	box-shadow: 4px 4px 20px black;
+	border-radius: 50px;
+	margin-bottom: 10px;
+}
+
+/* =================================
+	Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+	.student-name {
+		text-align: center;
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+	.main-nav li {
+		display: inline-block;
+		margin-left: 12px;
+		padding-bottom: 20px;
+	}
+
+	.portfolio-item {
+	  display: inline-block;
+	  width: 48%;
+	  margin-right: -4px;
+	  vertical-align: top;
+	  padding-left: 1em;
+	  padding-right: 1em;
+
+	}
+	.page-section {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.profile-info {
+		text-align: left;
+		float: left;
+		margin-left: 2em;
+		padding-bottom: 10px;
+		width: 50%;
+		font-size: 1.1em;
+	}
+	.profile-pic {
+		width: 35%;
+		float: right;
+		padding-right: 30px;
+		padding-bottom: 10px;
+	}
+	#top {
+		display: none;
+	}
+
+	.footer	.main-nav {
+		display: inline-block;
+		float: right;
+		margin-right: 2em;
+		padding-bottom: 10px;
+	}
+
+	#skills li {
+		display: inline-block;
+		margin-right: 20px;
+		padding-bottom: 10px;
+	}
+	.contact p {
+		width: 80%;
+	}
+	.footer .student-name {
+		font-size: 1em;
+		margin-left: 2em;
+		padding-bottom: 10px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.page-section {
+		width: 90%;
+		margin: 0 auto;
+	}
+	#top {
+		display: none;
+	}
+	.main-header {
+		padding: 20px 80px 0 80px;
+	}
+	.main-header .student-name {
+		float: left;
+	}
+	.main-header  .main-nav {
+		float: right;
+		margin-top: 32px;
+	}
+	.portfolio-item {
+		  display: inline-block;
+		  width: 30%;
+		  margin-right: -4px;
+		  vertical-align: top;
+		  padding-left: 1em;
+		  padding-right: 1em;
+
+	}
+	.profile-pic {
+		width: 30%;
+		float: right;
+		margin-right: 2em;
+		padding-bottom: 10px;
+	}
+	.footer  {
+		padding: 0 40px;
+	}
+
+}
